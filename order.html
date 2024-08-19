@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/order.css" />
+    <title>ORDER</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>Cristiano Restaurant</h1>
+        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        <nav>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./favorite.html">Favorites</a></li>
+            <li><a href="./order.html">Order</a></li>
+            <li><a href="./reservation.html">Reservation</a></li>
+            <li><a href="./opinion.html">Opinion</a></li>
+            <li><a href="./counter.html">Counter</a></li>
+            <li><a href="./location.html">Location</a></li>
+            <li><a href="./contactUs.html">Contact Us</a></li>
+            <li><a href="./index.html">Log in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+
+    <section id="order-section">
+      <h2>Order Your Pizza</h2>
+      <form id="order-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="pizza">Select Pizza:</label>
+        <select id="pizza" name="pizza" required>
+          <option value="Best Pizza Dough Ever">Best Pizza Dough Ever</option>
+          <option value="Deep Dish Fruit Pizza">Deep Dish Fruit Pizza</option>
+          <option value="Pizza Dip">Pizza Dip</option>
+          <option value="Cauliflower Pizza Crust">
+            Cauliflower Pizza Crust (with BBQ Chicken Pizza)
+          </option>
+          <option value="Pizza Quesadillas">
+            Pizza Quesadillas (aka Pizzadillas)
+          </option>
+          <option value="Sweet Potato Kale Pizza">
+            Sweet Potato Kale Pizza with Rosemary & Red Onion
+          </option>
+          <option value="Pizza Dip - My Baking Addiction">
+            Pizza Dip - My Baking Addiction
+          </option>
+          <option value="Pizza Potato Skins">Pizza Potato Skins</option>
+          <option value="No-Knead Pizza Dough">No-Knead Pizza Dough</option>
+          <option value="Homemade Pizza">Homemade Pizza</option>
+          <option value="Taco Quesadilla Pizzas">Taco Quesadilla Pizzas</option>
+          <option value="Jay’s Signature Pizza Crust">
+            Jay’s Signature Pizza Crust
+          </option>
+          <option value="Avocado Breakfast Pizza">
+            Avocado Breakfast Pizza with Fried Egg
+          </option>
+          <option value="Pepperoni Pizza Burgers">
+            Pepperoni Pizza Burgers
+          </option>
+          <option value="Thai Chicken Pizza">
+            Thai Chicken Pizza with Sweet Chili Sauce
+          </option>
+          <option value="One Basic Pizza Crust">One Basic Pizza Crust</option>
+          <option value="Peach, Basil, Mozzarella, & Balsamic Pizza">
+            Peach, Basil, Mozzarella, & Balsamic Pizza
+          </option>
+          <option value="English-Muffin Egg Pizzas">
+            English-Muffin Egg Pizzas
+          </option>
+          <option value="Simple No Knead Pizza Dough">
+            Simple No Knead Pizza Dough
+          </option>
+          <option value="Grilled Veggie Pizza">Grilled Veggie Pizza</option>
+          <option value="Spicy Chicken and Pepper Jack Pizza">
+            Spicy Chicken and Pepper Jack Pizza
+          </option>
+          <option value="How to Grill Pizza">How to Grill Pizza</option>
+          <option value="PW’s Favorite Pizza">PW’s Favorite Pizza</option>
+          <option value="Barbecue Chicken Pizza">Barbecue Chicken Pizza</option>
+          <option value="Avocado Pita Pizza">
+            Avocado Pita Pizza with Cilantro Sauce
+          </option>
+          <option value="Pizza Monkey Bread">Pizza Monkey Bread</option>
+          <option value="Supreme Pizza Burgers">Supreme Pizza Burgers</option>
+          <option value="Balsamic Strawberry Chicken Pizza">
+            Balsamic Strawberry and Chicken Pizza with Sweet Onions and Smoked
+            Bacon
+          </option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          value="1"
+          min="1"
+          required
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="order-confirmation" class="hidden"></div>
+    </section>
+
+    <script src="./JS/order.js"></script>
+  </body>
+</html>
